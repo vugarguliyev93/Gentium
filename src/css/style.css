@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-top {
+    background-image: url("https://gentium.pixerex.com/wp-content/uploads/2019/01/hero_02.jpg");
+    background-repeat: no-repeat;
+    background-position: 66% -16%;
+    background-color: black;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.header-box h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 39px;
+    font-weight: 900;
+}
+
+.header-box p {
+    font-size: 19px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 0px 36px 10px 0px;
+
+}
+
+.header-box img {
+    width: 23px;
+    height: 23px;
+}
+
+
+.header-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 170px;
+}
+
+.site-navbar {
+    display: flex;
+    cursor: pointer;
+}
+
+.border {
+    position: relative;
+}
+
+.border::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 0.175rem;
+    background-color: #e9204f;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.underline::after {
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s eases;
+}
+
+.underline:hover::after {
+    transform: scale(1, 1);
+}
+
+
+
+
+.border-bottom {
+    border-bottom: 3px solid #e9204f;
+    width: 70px;
+    margin-bottom: 33px;
+}
+
+.agency h2 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    margin-bottom: 3rem;
+}
+
+.introduce-digital {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    padding-top: 80px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-family: system-ui;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.btn {
+    width: 216px;
+    height: 61px;
+    color: white;
+    border: 3px solid red;
+    padding: 14px 46px;
+    transition: 0.3s;
+}
+
+
+.b1 {
+    background: -webkit-linear-gradient(0deg, transparent 50%, #e9204f 50%);
+    background-size: 500px, 80px;
+}
+
+.b1:hover {
+    background-position: 216px 0;
+}
+
+.information h3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.information p {
+    color: white;
+    font-size: 20px;
+    font-family: math;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 77px 77px 0px 77px
+}
+
+.info-box:hover {
+    background: #e9204f;
+    cursor: pointer;
+}
+
+.info-box {
+    background: #1b1b1b;
+    width: 25%;
+    padding: 60px 40px 100px 40px;
+    transition: 0.7s;
+
+}
+
+.info-icon img {
+    width: 16%;
+    margin-bottom: 20px;
+}
+
+.border-bottom-info {
+    border-bottom: 3px solid white;
+    width: 50px;
+    margin-bottom: 33px;
+}
+
+.info-box:nth-child(3)::after {
+    content: "";
+    background-color: #d40c3a;
+    height: 70px;
+    width: 22%;
+    position: absolute;
+    bottom: -24px;
+    z-index: -1;
+}
